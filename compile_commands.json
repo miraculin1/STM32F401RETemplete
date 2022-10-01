@@ -1,0 +1,75 @@
+[
+ {
+  "directory": "/home/miraculin/STProject/test",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-c",
+   "-mcpu=cortex-m4",
+   "-mthumb",
+   "-DSTM32F401xx",
+   "-I./Basic/Inc/",
+   "-Og",
+   "-Wall",
+   "-fdata-sections",
+   "-ffunction-sections",
+   "-g",
+   "-MMD",
+   "-MP",
+   "-MFbuild/main.d",
+   "-Wa,-a,-ad,-alms=build/main.lst",
+   "./User/main.c",
+   "-o",
+   "build/main.o"
+  ],
+  "file": "./User/main.c"
+ },
+ {
+  "directory": "/home/miraculin/STProject/test",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-c",
+   "-mcpu=cortex-m4",
+   "-mthumb",
+   "-DSTM32F401xx",
+   "-I./Basic/Inc/",
+   "-Og",
+   "-Wall",
+   "-fdata-sections",
+   "-ffunction-sections",
+   "-g",
+   "-MMD",
+   "-MP",
+   "-MFbuild/system_stm32f4xx.d",
+   "-Wa,-a,-ad,-alms=build/system_stm32f4xx.lst",
+   "system_stm32f4xx.c",
+   "-o",
+   "build/system_stm32f4xx.o"
+  ],
+  "file": "system_stm32f4xx.c"
+ },
+ {
+  "directory": "/home/miraculin/STProject/test",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-x",
+   "assembler-with-cpp",
+   "-c",
+   "-mcpu=cortex-m4",
+   "-mthumb",
+   "-DSTM32F401xx",
+   "-I./Basic/Inc/",
+   "-Og",
+   "-Wall",
+   "-fdata-sections",
+   "-ffunction-sections",
+   "-g",
+   "-MMD",
+   "-MP",
+   "-MFbuild/startup_stm32f401xx.d",
+   "startup_stm32f401xx.s",
+   "-o",
+   "build/startup_stm32f401xx.o"
+  ],
+  "file": "startup_stm32f401xx.s"
+ }
+]
